@@ -33,7 +33,7 @@ export default function Post(props) {
         {body}
       </p>
       <div className='buttonDiv'>
-      <Button variant="outlined" color="error" onClick={DeleteHandler}>Delete</Button>
+      <Button variant="outlined" color="error" onClick={() =>   DeleteHandler(props.id)}>Delete</Button>
       </div>
     </div>
   );

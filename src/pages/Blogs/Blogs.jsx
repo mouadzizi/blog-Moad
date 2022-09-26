@@ -40,7 +40,10 @@ export default function Blogs() {
   };
 
   const DeleteHandler = (id) => {
-
+    const filterdData = data.filter((value) => {
+      return value.id != id;
+    })
+    setData(filterdData)
   }
 
   const handleOpen = () => {
