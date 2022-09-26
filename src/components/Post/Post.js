@@ -1,7 +1,7 @@
 import './Post.css'
 import { Link } from "react-router-dom";
 import React from 'react'
-import images from '../../Images/cover2.jpg'
+import images from '../../Images/Blog1.png'
 import {Button} from '@mui/material'
 export default function Post(props) {
 
@@ -19,7 +19,6 @@ export default function Post(props) {
         src={images}
         alt=""
       />
-
       <div className="postInfo">
 
         <span className="postTitle">

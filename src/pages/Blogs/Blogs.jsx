@@ -5,6 +5,7 @@ import Post from '../../components/Post'
 import Data from '../../DATA/Data.json'
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Blogs() {
   const [data, setData] = useState(Data.posts);
@@ -64,7 +65,7 @@ export default function Blogs() {
         {
           data.map((blog) => {
             return (
-              <Post title={blog.title} body={blog.body} id={blog.id} date={blog.DatePost} deleteHandler={DeleteHandler} />
+              <Post title={blog.title} body={blog.body} id={uuidv4()} date={blog.DatePost} deleteHandler={DeleteHandler} image={blog.image}/>
 
             )
           })
