@@ -2,16 +2,15 @@ import './Post.css'
 import { Link } from "react-router-dom";
 import React from 'react'
 import images from '../../Images/Blog1.png'
-import {Button} from '@mui/material'
+import { Button } from '@mui/material'
 export default function Post(props) {
 
   const image = props.image;
-  const id = props.id;
   const body = props.body;
   const date = props.date;
   const title = props.title;
   const DeleteHandler = props.deleteHandler;
-  
+
   return (
     <div className="post">
       <img
@@ -32,7 +31,7 @@ export default function Post(props) {
         {body}
       </p>
       <div className='buttonDiv'>
-      <Button variant="outlined" color="error" onClick={() =>   DeleteHandler(props.id)}>Delete</Button>
+        <Button variant="outlined" color="error" onClick={() => DeleteHandler(props.id)}>Delete</Button>
       </div>
     </div>
   );

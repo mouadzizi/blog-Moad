@@ -54,10 +54,11 @@ export default function Blogs() {
     setOpen(false);
   };
   const submitData = () => {
-    let newData = [...data, { title: title, id: 55, body: blog, DatePost: handleDate() }]
+    let newData = [...data, { title: title, id: uuidv4(), body: blog, DatePost: handleDate() }]
     setData(newData)
     setOpen(false);
   }
+
 
   return (
     <div className='Blogs'>
@@ -65,7 +66,7 @@ export default function Blogs() {
         {
           data.map((blog) => {
             return (
-              <Post title={blog.title} body={blog.body} id={uuidv4()} date={blog.DatePost} deleteHandler={DeleteHandler} image={blog.image}/>
+              <Post key={blog.id} title={blog.title} body={blog.body} id={blog.id} date={blog.DatePost} deleteHandler={DeleteHandler} image={blog.image} />
 
             )
           })

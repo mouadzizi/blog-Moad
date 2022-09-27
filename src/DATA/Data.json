@@ -2,10 +2,9 @@
     "posts": [
         {
             "id": 1,
-            "title": "This is an Exemple",
+            "title": "Title Exemple",
             "body": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.?",
-            "DatePost": "25-09-2022",
-            "image": "../../Images/Blog1.png"
+            "DatePost": "27-09-2022"
         }
     ]
 }
